@@ -1,0 +1,28 @@
+.intro-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f0f0f;
+  font-family: "Fira Code", monospace;
+  font-size: 2rem;
+  color: white;
+}
+
+.pink {
+  color: #ff69b4;
+}
+.white {
+  color: white;
+}
+.red {
+  color: #ff4c4c;
+}
+.green {
+  color: #00ff00;
+}
+
+.cursor {
+  font-weight: bold;
+  color: white;
+}

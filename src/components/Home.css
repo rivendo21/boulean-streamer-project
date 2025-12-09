@@ -1,0 +1,22 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  font-size: 2rem;
+  color: plum;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+  color: black;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}

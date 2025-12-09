@@ -17,6 +17,12 @@
   height: 50px; /* adjust as needed */
 }
 
+.navbar-right {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
 .navbar-right a {
   color: white;
   text-decoration: none;

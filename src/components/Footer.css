@@ -1,0 +1,37 @@
+.footer {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 105, 180, 0.9),
+    rgba(170, 0, 255, 0.6) 12px
+  );
+  margin-top: 300px;
+}
+
+.footer-grid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.left-footer {
+  color: white;
+}
+
+a {
+  color: #f8f8f2;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+a:hover {
+  color: lightgreen;
+}
+
+.arrow {
+  color: #8a0806;
+}

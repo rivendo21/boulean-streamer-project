@@ -5,9 +5,10 @@ const Heading = () => {
     <div className="main-content">
       <h1 className="main-heading">Where Dad Jokes Meet Chaos!</h1>
       <p className="sub-text">
-        Welcome to my website. Here you'll find links to my games, links to my
-        social media, some information about myself, and whatever else I decide
-        to put on here. For now, I'm keeping it pretty simple though.
+        Welcome to this fan website. Here you'll find links to boulean games,
+        links to his social media, some information about boulean, and whatever
+        else new he decide to put on here. For now, It will be kept pretty
+        simple though.
       </p>
     </div>
   );

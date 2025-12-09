@@ -20,3 +20,8 @@ button {
   cursor: pointer;
   font-size: 1.2rem;
 }
+
+.Games {
+  margin-top: 400px;
+  color: #00ff00;
+}

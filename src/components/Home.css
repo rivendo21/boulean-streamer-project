@@ -10,13 +10,6 @@
   text-align: center;
 }
 
-.twitch-flex-container {
-  background-color: rgba(8, 12, 8, 0.445);
-  padding: 30px;
-  border-radius: 30px;
-  font-family: "Orbitron";
-}
-
 button {
   color: black;
   background-color: #ff69b4;
@@ -143,61 +136,6 @@ button {
   margin-top: 30px;
 }
 
-.tiers-container {
-  display: flex;
-  gap: 20px; /* space between containers */
-  justify-content: center; /* center the row */
-  width: 80%; /* occupy 80% of the parent container */
-  margin: 20px auto 0 auto; /* center horizontally with top margin */
-  flex-wrap: wrap; /* wrap on smaller screens */
-}
-
-.tier {
-  flex: 1; /* equal width */
-  min-width: 200px; /* don't shrink too much */
-  min-height: 300px; /* minimum height */
-  background: linear-gradient(135deg, #7b2ff7, #f107a3);
-  display: flex;
-  flex-direction: column; /* stack content vertically */
-  align-items: center;
-  justify-content: flex-start; /* start from top for long content */
-  color: black; /* make text black */
-  font-size: 1.2rem; /* adjust text size for readability */
-  font-weight: bold;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-  overflow: hidden; /* optional: prevent overflow outside box */
-}
-.tier p,
-.tier ul,
-.tier h3 {
-  color: #00ffff; /* neon cyan for readability */
-  font-weight: bold;
-}
-
-.tier h3 {
-  color: #ffea00; /* accent for headings */
-}
-
-.tier li {
-  color: #d6b3ff; /* slightly softer neon for list items */
-}
-.tier:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-/* Optional: make text smaller on small screens */
-@media (max-width: 768px) {
-  .tier {
-    height: 250px;
-    font-size: 1.2rem;
-  }
-}
 .bronze-btn {
   padding: 14px 32px;
   font-size: 1.1rem;

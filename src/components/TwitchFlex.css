@@ -1,0 +1,13 @@
+.twitch-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  /* Semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.6); /* adjust opacity (0.0–1.0) */
+
+  padding: 30px 30px;
+  border-radius: 20px; /* optional rounded corners */
+}

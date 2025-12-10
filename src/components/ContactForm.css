@@ -1,0 +1,64 @@
+.form-wrapper {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gamer-form {
+  background: #0d0d0d;
+  padding: 100px;
+  border-radius: 15px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 25px rgba(180, 0, 255, 0.4);
+  border: 2px solid #7b2ff7;
+}
+
+.gamer-input {
+  background: #1a1a1a;
+  border: 2px solid #7b2ff7;
+  padding: 12px 15px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: 0.2s;
+  outline: none;
+  box-shadow: 0 0 10px rgba(123, 47, 247, 0.2);
+}
+
+.gamer-input::placeholder {
+  color: #d7b6ff;
+}
+
+.gamer-input:focus {
+  border-color: #f107a3;
+  box-shadow: 0 0 15px rgba(241, 7, 163, 0.6);
+}
+
+.gamer-button {
+  background: linear-gradient(135deg, #7b2ff7, #f107a3);
+  padding: 12px 15px;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(123, 47, 247, 0.6);
+}
+
+.gamer-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(241, 7, 163, 0.6);
+}
+
+.status-msg {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #fff;
+  text-shadow: 0 0 10px #7b2ff7;
+}

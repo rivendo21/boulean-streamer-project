@@ -4,15 +4,30 @@
   font-family: "Fira Code", monospace;
   text-shadow: 0 0 8px #ff69b4;
   animation: glow 2s infinite alternate;
+  margin-top: 2px; /* remove default margin */
+  padding: 0; /* remove default padding */
 }
 
-.main-content {
+.heading-wrapper {
+  background-color: rgba(138, 138, 233, 0.274);
+  border-radius: 20px;
+  padding-bottom: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block; /* shrink to content width */
+  position: relative;
+  z-index: 1; /* stay above hero background */
+  margin-bottom: -50px; /* pull the heading down over the clip */
+}
+
+#maincontent {
   display: flex;
   flex-direction: column; /* stack children vertically */
   justify-content: flex-start; /* align at top below navbar */
   align-items: center; /* horizontal centering */
   padding-top: 100px; /* space below navbar */
   text-align: center;
+  font-weight: bold;
 }
 
 @keyframes glow {
@@ -31,4 +46,27 @@
   margin-top: 20px; /* spacing below heading */
   line-height: 1.5;
   width: 600px;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.hero {
+  height: 100vh; /* full viewport height */
+  width: 100%;
+  background-image: url("boulean.jpg");
+  background-size: cover; /* cover the entire section */
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.TwitchClip {
+  position: relative;
+  z-index: 100; /* make sure it overlaps the heading background */
 }

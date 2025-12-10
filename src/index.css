@@ -4,3 +4,7 @@ body {
   font-family: "Fira Code", monospace;
   background-color: #0d0221;
 }
+
+html {
+  scroll-behavior: smooth;
+}

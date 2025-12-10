@@ -53,7 +53,7 @@
 .hero {
   height: 100vh; /* full viewport height */
   width: 100%;
-  background-image: url("boulean.jpg");
+  background-image: url("/boulean.jpg");
   background-size: cover; /* cover the entire section */
   background-position: center;
   display: flex;

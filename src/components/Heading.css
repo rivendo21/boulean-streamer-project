@@ -22,7 +22,7 @@
 
 #maincontent {
   display: flex;
-  flex-direction: column; /* stack children vertically */
+  flex-direction: row; /* stack children vertically */
   justify-content: flex-start; /* align at top below navbar */
   align-items: center; /* horizontal centering */
   padding-top: 100px; /* space below navbar */
@@ -40,8 +40,8 @@
 }
 
 .sub-text {
-  color: #00ff00; /* green */
-  font-family: "Fira Code", monospace;
+  color: #33ccff; /* green */
+  font-family: "Orbitron", monospace;
   font-size: 1.2rem;
   margin-top: 20px; /* spacing below heading */
   line-height: 1.5;
@@ -69,4 +69,10 @@
 .TwitchClip {
   position: relative;
   z-index: 100; /* make sure it overlaps the heading background */
+}
+
+.sub-text-wrapper {
+  background-color: rgba(0, 0, 0, 0.479);
+  border-radius: 20px;
+  margin-top: 50px;
 }

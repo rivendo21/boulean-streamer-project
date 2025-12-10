@@ -20,18 +20,20 @@ const Home = () => {
         </a>
       </div>
       <div id="Games">
-        <div className="games-content">
-          Games
-          <div className="return">
-            Return of pluto -&gt;{" "}
-            <a>
-              <button className="gamer-btn">Play on itch</button>
-            </a>
+        <div className="games-wrapper">
+          <div className="games-content">
+            Games
+            <div className="return">
+              Return of pluto -&gt;{" "}
+              <a>
+                <button className="gamer-btn">Play on itch</button>
+              </a>
+            </div>
+            <div className="return-margin">Beardlean -&gt; Coming soon </div>
           </div>
-          <div className="return">Beardlean -&gt; Coming soon </div>
         </div>
       </div>
-      <section className="support">
+      <section id="support">
         <h1 className="sup-text">Supporters</h1>
         <div className="tiers-container">
           <div className="tier">

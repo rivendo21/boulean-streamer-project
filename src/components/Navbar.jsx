@@ -11,6 +11,7 @@ const Navbar = () => {
       <div className="navbar-right">
         <a href="#maincontent">Home</a>
         <a href="#Games">Games</a>
+        <a href="#support">Support</a>
         <a href="#contact">
           <button className="animated-button">
             <svg

@@ -92,7 +92,6 @@ button {
   transform: scale(0.97);
 }
 
-/* Optional: Energetic Shine Swipe */
 .twitch-energy-btn::after {
   content: "";
   position: absolute;
@@ -109,7 +108,6 @@ button {
   left: 160%;
 }
 
-/* Active for click feedback */
 .gamer-btn:active {
   transform: scale(0.97);
   box-shadow: 0 0 15px #00f0ff inset;
@@ -148,6 +146,7 @@ button {
   /* metallic text shine animation when hovering */
   position: relative;
   overflow: hidden;
+  margin-top: 90px;
 }
 
 .bronze-btn::after {
@@ -189,14 +188,13 @@ button {
   border-radius: 8px;
   cursor: pointer;
 
-  /* Metallic silver gradient */
   background: linear-gradient(135deg, #e5e5e5, #cfcfcf, #b8b8b8);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease;
 
   position: relative;
   overflow: hidden;
-  margin-top: 80px;
+  margin-top: 90px;
 }
 
 .silver-btn::after {
@@ -238,7 +236,6 @@ button {
   border-radius: 8px;
   cursor: pointer;
 
-  /* Rich metallic gold gradient */
   background: linear-gradient(135deg, #ffdf6b, #f4c542, #e7b018, #c99700);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
 
@@ -290,7 +287,7 @@ button {
   border-radius: 20px;
   padding: 2rem;
   max-width: 800px;
-  width: 90%; /* responsive */
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;

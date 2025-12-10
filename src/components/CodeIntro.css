@@ -1,18 +1,18 @@
 .intro-container {
   height: 100vh;
   display: flex;
-  flex-direction: column; /* stack text and loader */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #0f0f0f;
   font-family: "Fira Code", monospace;
   font-size: 2rem;
   color: white;
-  gap: 1.5rem; /* space between code text and loader */
+  gap: 1.5rem;
 }
 .code-text {
   display: flex;
-  flex-wrap: wrap; /* keeps the code inline nicely */
+  flex-wrap: wrap;
   justify-content: center;
   font-size: 2rem;
 }

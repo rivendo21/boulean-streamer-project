@@ -1,23 +1,23 @@
 .main-heading {
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 4rem); /* scales between 2rem and 4rem */
   color: #ff69b4;
   font-family: "Fira Code", monospace;
   text-shadow: 0 0 8px #ff69b4;
   animation: glow 2s infinite alternate;
-  margin-top: 2px; /* remove default margin */
-  padding: 0; /* remove default padding */
+  margin: 0;
+  padding: 0;
 }
 
 .heading-wrapper {
-  background-color: rgba(0, 0, 0, 0.753);
+  margin-top: 4rem; /* pushes the box down from top */
+  background-color: rgba(0, 0, 0, 0.788);
   border-radius: 20px;
-  padding-bottom: 400px;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: inline-block; /* shrink to content width */
+  padding: 2rem 2rem;
+  display: inline-block;
   position: relative;
-  z-index: 1; /* stay above hero background */
-  margin-bottom: -50px; /* pull the heading down over the clip */
+  z-index: 10;
+  max-width: 90%;
+  text-align: center;
 }
 
 #maincontent {
@@ -39,40 +39,57 @@
   }
 }
 
-.sub-text {
-  color: #33ccff; /* green */
-  font-family: "Orbitron", monospace;
-  font-size: 1.2rem;
-  margin-top: 20px; /* spacing below heading */
-  line-height: 1.5;
-  width: 600px;
-  text-align: center;
-  margin-bottom: 150px;
-}
-
 .hero {
-  height: 100vh; /* full viewport height */
+  min-height: 100vh;
   width: 100%;
   background-image: url("/boulean.jpg");
-  background-size: cover; /* cover the entire section */
+  background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  text-align: center;
+  padding: 6rem 2rem 2rem; /* increase top padding to push everything down */
+  box-sizing: border-box;
 }
 .TwitchClip {
   position: relative;
-  z-index: 100; /* make sure it overlaps the heading background */
+  z-index: 1; /* below heading */
+  width: 100%;
+  max-width: 1200px; /* optional max width */
+  height: 500px; /* adjust to taste, taller than heading */
+  margin: 0 auto;
 }
 
+.sub-text {
+  color: #33ccff;
+  font-family: "Orbitron", monospace;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  width: 90%; /* fills most of screen, responsive */
+  max-width: 600px; /* doesn’t get too wide on large screens */
+  text-align: center;
+  margin: 1.5rem auto; /* vertical spacing and horizontal centering */
+}
 .sub-text-wrapper {
-  background-color: rgba(0, 0, 0, 0.479);
+  background-color: rgba(0, 0, 0, 0.48);
   border-radius: 20px;
-  margin-top: 50px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 2.5rem;
+  }
+
+  .sub-text {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .heading-wrapper {
+    padding: 1.5rem;
+  }
 }

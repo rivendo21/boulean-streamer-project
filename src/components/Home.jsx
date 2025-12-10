@@ -10,16 +10,19 @@ const Home = () => {
       <TwitchFlex />
       <div id="Games">
         <div className="games-wrapper">
-          <div className="games-content">
-            Games
-            <div className="return">
-              Return of pluto -&gt;{" "}
-              <a>
-                <button className="gamer-btn">Play on itch</button>
-              </a>
-            </div>
-            <div className="return-margin">Beardlean -&gt; Coming soon </div>
+          <h2>Games</h2>
+          <div className="return">
+            Return of Pluto -&gt;
+            <a
+              href="https://boulean.itch.io/the-return-of-pluto"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              &nbsp; &nbsp;
+              <button className="gamer-btn">Play on itch</button>
+            </a>
           </div>
+          <div className="return-margin">Beardlean -&gt; Coming soon</div>
         </div>
       </div>
       <section id="support">

@@ -32,8 +32,8 @@ const TwitchClip = ({ className }) => {
       style={{
         width: "900px",
         maxWidth: "90%",
-        height: "340px",
-        marginTop: "-250px",
+        height: "500px",
+        marginTop: "5px",
         zIndex: 100,
         position: "relative",
       }}

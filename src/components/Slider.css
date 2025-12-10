@@ -1,12 +1,16 @@
 .slider-wrapper {
-  width: 100%;
+  position: relative; /* or absolute if needed */
+  width: 100vw; /* full viewport width */
+  left: 0; /* start at left edge */
   overflow: hidden;
   background-color: rgba(128, 128, 128, 0.185);
   height: 150px;
   display: flex;
-  justify-content: center; /* center track */
-  align-items: center; /* vertical centering */
-  margin-top: 90px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 90px; /* spacing from clip or heading */
+  padding: 0; /* remove padding */
+  box-sizing: border-box;
 }
 
 .slider-track {

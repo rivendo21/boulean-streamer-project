@@ -22,18 +22,15 @@ button {
 }
 
 #Games {
-  margin-top: 400px;
-  color: #33ccff;
-  background-image: url("/beardlean.png");
   width: 100%;
-  height: 30vh;
+  background-image: url("/beardlean.png");
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: "Orbitron";
+  justify-content: center; /* center content horizontally */
+  padding: 5rem 1rem; /* add vertical padding so content isn’t on top */
+  box-sizing: border-box;
+  margin-top: 200px;
 }
 
 .gamer-btn {
@@ -289,7 +286,24 @@ button {
 }
 
 .games-wrapper {
-  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.856); /* semi-transparent container */
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 800px;
+  width: 90%; /* responsive */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  color: #33ccff;
+  font-family: "Orbitron";
+  font-size: 1.2rem;
+  gap: 1.5rem; /* spacing between lines */
+  margin-top: 500px;
+}
+.games-wrapper .gamer-btn {
+  margin-top: 1rem;
 }
 
 .contact-text {

@@ -13,7 +13,6 @@ const Heading = () => {
 
         <TwitchClip className="TwitchClip" />
 
-        {/* Sub-text with wrapper for contrast */}
         <div className="sub-text-wrapper">
           <p className="sub-text">
             Welcome to this fan website. Here you'll find links to boulean

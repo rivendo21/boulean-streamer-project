@@ -26,7 +26,13 @@ const Tiers = () => {
         </ul>
         <img src="emotes.png" alt="emotes" />
         <p>Price: 5.99$</p>
-        <button className="bronze-btn">Subscribe</button>
+        <a
+          href="https://www.twitch.tv/boulean/subscribe
+"
+          target="_blank"
+        >
+          <button className="bronze-btn">Subscribe</button>
+        </a>
       </motion.div>
 
       {/* Tier 2: slide from bottom with bounce */}
@@ -51,7 +57,13 @@ const Tiers = () => {
         </ul>
         <img src="emotes.png" alt="emotes" />
         <p>Price: 9.99$</p>
-        <button className="silver-btn">Subscribe</button>
+        <a
+          href="https://www.twitch.tv/boulean/subscribe
+"
+          target="_blank"
+        >
+          <button className="silver-btn">Subscribe</button>
+        </a>
       </motion.div>
 
       {/* Tier 3: slide from right with bounce */}
@@ -77,7 +89,13 @@ const Tiers = () => {
         </ul>
         <img src="emotes.png" alt="emotes" />
         <p>Price: 25.99$</p>
-        <button className="gold-btn">Subscribe</button>
+        <a
+          href="https://www.twitch.tv/boulean/subscribe
+"
+          target="_blank"
+        >
+          <button className="gold-btn">Subscribe</button>
+        </a>
       </motion.div>
     </div>
   );

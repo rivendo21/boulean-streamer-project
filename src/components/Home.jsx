@@ -30,6 +30,10 @@ const Home = () => {
       <section id="contact">
         <h1 className="sup-text">Contacts</h1>
         <ContactForm />
+        <p className="contact-text">
+          If you want to have E-mails about my next merch -&gt; please submit
+          your E-mail to be the first to get notified for the early bird deals{" "}
+        </p>
       </section>
     </div>
   );

@@ -24,15 +24,27 @@
 }
 
 a {
-  color: #f8f8f2;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   margin: 0 auto;
+  font-family: "Orbitron", sans-serif;
 }
 
 a:hover {
-  color: lightgreen;
+  color: #33ccff;
 }
 
 .arrow {
   color: #8a0806;
+}
+
+.right-footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
 }

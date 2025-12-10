@@ -7,7 +7,7 @@
 
 .gamer-form {
   background: #0d0d0d;
-  padding: 100px;
+  padding: 80px 50px;
   border-radius: 15px;
   width: 350px;
   display: flex;
@@ -15,6 +15,23 @@
   gap: 20px;
   box-shadow: 0 0 25px rgba(180, 0, 255, 0.4);
   border: 2px solid #7b2ff7;
+
+  /* initial state */
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+/* Animate when in view */
+.gamer-form.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animate when out of view (scroll up) */
+.gamer-form.out-of-view {
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .gamer-input {
@@ -24,7 +41,7 @@
   border-radius: 8px;
   color: #fff;
   font-size: 1.1rem;
-  transition: 0.2s;
+  transition: 0.3s;
   outline: none;
   box-shadow: 0 0 10px rgba(123, 47, 247, 0.2);
 }
@@ -35,7 +52,17 @@
 
 .gamer-input:focus {
   border-color: #f107a3;
-  box-shadow: 0 0 15px rgba(241, 7, 163, 0.6);
+  box-shadow: 0 0 15px rgba(241, 7, 163, 0.8);
+  animation: neonPulse 1s infinite alternate;
+}
+
+@keyframes neonPulse {
+  from {
+    box-shadow: 0 0 10px rgba(241, 7, 163, 0.6);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(241, 7, 163, 1);
+  }
 }
 
 .gamer-button {
@@ -47,13 +74,27 @@
   font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 0 15px rgba(123, 47, 247, 0.6);
+  background-size: 200% 200%;
+  animation: gradientShift 3s linear infinite;
 }
 
 .gamer-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(241, 7, 163, 0.6);
+  transform: scale(1.1);
+  box-shadow: 0 0 35px rgba(241, 7, 163, 0.8);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .status-msg {
@@ -61,4 +102,10 @@
   font-size: 1.1rem;
   color: #fff;
   text-shadow: 0 0 10px #7b2ff7;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.status-msg.show {
+  opacity: 1;
 }

@@ -6,10 +6,15 @@ const Footer = () => {
       <div className="footer-grid">
         <div className="left-footer">
           <img src="boulean.png" alt="Boulean Logo" />
-          <br />© 2025 Boulean. All rights reserved.
+          <br />© 2026 Boulean. All rights reserved.
         </div>
         <div className="right-footer">
-          <a href="https://github.com/boulean">GitHub</a>
+          <a href="https://www.youtube.com/@bouleandev" target="_blank">
+            Check My Youtube -&gt;
+          </a>
+          <a href="https://discord.com/invite/NdTtThKZ9d" target="_blank">
+            Check My Discord -&gt;
+          </a>
         </div>
       </div>
     </div>

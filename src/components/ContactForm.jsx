@@ -1,10 +1,14 @@
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import axios from "axios";
-import "./ContactForm.css"; // add this
+import "./ContactForm.css";
 
 function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "" });
   const [status, setStatus] = useState("");
+
+  // threshold 0 to trigger partially visible, trigger multiple times
+  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 });
 
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -13,7 +17,7 @@ function ContactForm() {
   async function handleSubmit(e) {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/form", form);
+      await axios.post("http://localhost:5000/api/form", form);
       setStatus("Success! Sent.");
       setForm({ name: "", email: "" });
     } catch (err) {
@@ -23,7 +27,11 @@ function ContactForm() {
 
   return (
     <div className="form-wrapper">
-      <form onSubmit={handleSubmit} className="gamer-form">
+      <form
+        ref={ref}
+        onSubmit={handleSubmit}
+        className={`gamer-form ${inView ? "in-view" : "out-of-view"}`}
+      >
         <input
           name="name"
           placeholder="Your Name"
@@ -32,7 +40,6 @@ function ContactForm() {
           required
           className="gamer-input"
         />
-
         <input
           name="email"
           placeholder="Email Address"
@@ -41,13 +48,12 @@ function ContactForm() {
           required
           className="gamer-input"
         />
-
         <button type="submit" className="gamer-button">
           Submit
         </button>
       </form>
 
-      <p className="status-msg">{status}</p>
+      <p className={`status-msg ${status ? "show" : ""}`}>{status}</p>
     </div>
   );
 }
